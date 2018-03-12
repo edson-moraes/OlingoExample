@@ -1,4 +1,4 @@
-package com.wallpaperhub.model;
+package com.wallpaperhub.enums;
 
 public enum WallpaperCategory {
     SFW,

@@ -1,7 +1,7 @@
 package com.wallpaperhub.model;
 
-import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.sun.istack.internal.NotNull;
+import com.wallpaperhub.enums.WallpaperCategory;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
