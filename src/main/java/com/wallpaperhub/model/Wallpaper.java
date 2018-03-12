@@ -1,10 +1,11 @@
 package com.wallpaperhub.model;
 
-import com.sun.istack.internal.NotNull;
+
 import com.wallpaperhub.enums.WallpaperCategory;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
 import java.util.Calendar;
 
 @Entity
