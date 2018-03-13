@@ -1,59 +1,58 @@
 package com.wallpaperhub.model;
 
-
 import com.wallpaperhub.enums.WallpaperCategory;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.validation.constraints.NotNull;
 import java.util.Calendar;
 
 @Entity
 public class Wallpaper {
 
     @Id
-    @NotNull
-    private long id;
+    @Column(nullable = false)
+    private Long id;
 
-    @NotNull
-    private int width;
+    @Column(nullable = false)
+    private Integer width;
 
-    @NotNull
-    private int length;
+    @Column(nullable = false)
+    private Integer length;
 
-    @NotNull
+    @Column(nullable = false)
     private WallpaperCategory category;
 
-    @NotNull
+    @Column(nullable = false)
     private Calendar uploadedAt;
 
-    @NotNull
-    private long uploader;
+    @Column(nullable = false)
+    private Long uploader;
 
-    @NotNull
+    @Column(nullable = false)
     private String filePath;
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public int getWidth() {
+    public Integer getWidth() {
         return width;
     }
 
-    public void setWidth(int width) {
+    public void setWidth(Integer width) {
         this.width = width;
     }
 
-    public int getLength() {
+    public Integer getLength() {
         return length;
     }
 
-    public void setLength(int length) {
+    public void setLength(Integer length) {
         this.length = length;
     }
 
@@ -73,11 +72,11 @@ public class Wallpaper {
         this.uploadedAt = uploadedAt;
     }
 
-    public long getUploader() {
+    public Long getUploader() {
         return uploader;
     }
 
-    public void setUploader(long uploader) {
+    public void setUploader(Long uploader) {
         this.uploader = uploader;
     }
 
